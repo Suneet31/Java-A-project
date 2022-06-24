@@ -1,0 +1,20 @@
+* Author suneet
+*/ 
+package Practical;
+
+public class Nthseries {
+
+	public static void main(String[] args) {
+        int number = 25;  
+ 
+        double sum = 0;
+ 
+        for(int i = 1; i <= number; i++)
+    {
+            sum += 1.0/i;
+    }
+ 
+        System.out.println("sum: " + sum);
+    }  
+
+	}
