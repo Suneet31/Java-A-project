@@ -1,0 +1,40 @@
+/*
+ * Author Suneet
+ */
+abstract class Lbill{
+	double Units ;  
+
+public abstract void getUnit();
+public void LightBill(int Rate) {
+	System.out.println( Rate * Units);
+}
+}	
+
+
+class house extends Lbill{
+	public void getUnit()
+	{
+		Units = 100;
+	}
+}
+
+class business extends Lbill{
+	public void getUnit()
+	{
+		Units = 300;
+	}
+}
+
+public class LightBill {
+
+	public static void main(String[] args) {
+		house h = new house();
+		h.getUnit();
+		h.LightBill(4);
+		
+		business b = new business();
+		b.getUnit();
+		b.LightBill(4);
+	}
+
+}
